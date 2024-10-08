@@ -79,7 +79,7 @@ export default function Modal({ doctorId,schedule,closeForm }) {
      console.log(typeof(weekday[y]));
   
    if(array.find((c)=>{return weekday[y]===c})===undefined){
-console.log("jao")
+// console.log("jao");
    }
 
 
