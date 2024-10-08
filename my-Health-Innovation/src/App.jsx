@@ -8,7 +8,7 @@ import About from './components/About';
 import Doctors from './components/Doctors';
 
 import Footer from './components/Footer';
-import Dashboard from './components/Dashboard';
+
 import PatientDashboard from './components/patientDashboard';
 import DoctorDashboard from './components/doctordashboard';
 import Signin from './components/Signin1';
