@@ -69,7 +69,7 @@ export default function Modal({ doctorId,schedule,closeForm }) {
    
 
 
-     console.log(typeof(array));
+    // console.log(typeof(array));
    //  console.log(array);
       
      const adate="2024-07-15";
