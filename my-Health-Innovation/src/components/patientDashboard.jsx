@@ -141,19 +141,7 @@ const PatientDashboard = () => {
         // getMedicalRecords();
     }, [user])
 
-    const handleFileChange = async (event) => {
-        if (user) {
-            const file = event.target.files[0];
-            const formData = await new FormData();
-            formData.append('profile_picture', file);
-        }
-        // const response = await axios.post('/api/user/upload', formData);
-        // setUser(response.data);
-    };
-
-    const handleImageChange = (event) => {
-        setSelectedImage(URL.createObjectURL(event.target.files[0]));
-    };
+   
 
     const handleOnClick = (appointment) => {
         // event.preventDefault();
