@@ -60,59 +60,7 @@ export default function Modal({ doctorId,schedule,closeForm }) {
     event.preventDefault();
     setCredentials({ ...credentials, [event.target.name]: event.target.value })
     //console.log(typeof(credentials.time));
-    const start="23:00";
-    const end="01:00";
-    
-     let days=schedule.substring(0,schedule.length-12);
-    // console.log(days);
-     const array=days.split(",");
-   
 
-
-    // console.log(typeof(array));
-   //  console.log(array);
-      
-     const adate="2024-07-15";
-     const today=new Date(`${adate}T${"13:45:30"}Z`);
-     const y=today.getDay();
-     console.log(weekday[y]);
-     console.log(typeof(weekday[y]));
-  
-   if(array.find((c)=>{return weekday[y]===c})===undefined){
-// console.log("jao");
-   }
-
-
-
-
-
-
-    let time1,time2;
-    let time="00:02";
-    let chosentime;
-    if(start>end){
-       time1 = new Date(`1970-01-01T${start}Z`);
-       time2 = new Date(`1970-02-01T${end}Z`);
-       chosentime= new  Date(`1970-01-01T${time}Z`);
-
-       if(chosentime < time1 || chosentime >time2){
-       // console.log("out of range");
-       }
-       else{
-       // console.log("fine");
-       }
-    }
-    else{
- time1 = new Date(`1970-01-01T${start}Z`);
- time2 = new Date(`1970-01-01T${end}Z`);
- chosentime= new  Date(`1970-01-01T${time}Z`);
- if (time1 <= chosentime && chosentime<=time2) {
-  //console.log("Fine");
-}  else {
- // console.log("Out of range");
-}
-
-  }
 }
 
   const handleSubmit = async (event) => {
