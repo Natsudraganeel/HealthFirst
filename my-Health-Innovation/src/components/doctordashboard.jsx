@@ -176,6 +176,7 @@ export default function DoctorDashboard() {
         });
         const json = await response.json()
         console.log(json);
+               window.location.reload();
         // if (json.success) {
         //   // console.log(json)
         //   // console.log(json)
