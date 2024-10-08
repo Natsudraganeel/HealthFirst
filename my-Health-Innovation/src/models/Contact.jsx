@@ -11,11 +11,11 @@ const sendEmail = (event) => {
     event.preventDefault();
     console.log(email +" "+phone+" "+query)
     const config = {
-      Username: 'diptarupsiddhanta@gmail.com',
-      Password: '4F37BE4CF84F7F3551455B207FAA1978A3B8',
+      Username: `${import.meta.env.VITE_USERNAME}`,
+      Password: `${import.meta.env.VITE_PASSWORD}`,
       Host: "smtp.elasticemail.com",
-      Port: 2525,
-      To: 'diptarupsiddhanta@gmail.com',
+      Port: `${import.meta.env.VITE_PORT}`,    
+      To: `${import.meta.env.VITE_USERNAME}`,
       From: email,
       Subject: "Appointment Success",
       Body: query+".My phone number is"+phone,
